@@ -1,0 +1,17 @@
+.pokemon-image {
+    width: 200px;
+    height: 200px;
+}
+
+.pokemon-card {
+    background-color: rgb(255, 254, 196);
+    margin: 10px;
+}
+
+.pokemon-grid {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}

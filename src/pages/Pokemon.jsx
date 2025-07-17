@@ -1,6 +1,7 @@
 import { fetchPokemon } from '../api/pokemonApi';
 import React, {useState, useEffect} from 'react'; 
 import PokemonCard from '../components/PokemonCard';
+import '../pokemon.css';
 
 function Pokemon() {
     const [pokemon, setPokemon] = useState([]);

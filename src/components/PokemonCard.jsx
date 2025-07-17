@@ -1,3 +1,5 @@
+import '../pokemon.css';
+
 function PokemonCard({pokemon}) {
     return (
         <div className="pokemon-card">
