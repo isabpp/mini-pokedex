@@ -1,5 +1,6 @@
 import { fetchPokemon } from '../api/pokemonApi';
 import React, {useState, useEffect} from 'react'; 
+import PokemonCard from '../components/PokemonCard';
 
 function Pokemon() {
     const [pokemon, setPokemon] = useState([]);
@@ -28,10 +29,7 @@ function Pokemon() {
             <div className='pokemon-container'>
                 <div className='pokemon-grid'>
                     {pokemon.map((p) => (
-                        <div key={p.id} className='pokemon-card'>
-                            <img src={p.sprites.front_default} alt={p.name}/>
-                            <p>{p.name}</p>
-                        </div>
+                        <PokemonCard pokemon={p} key={p.id} />
                     ))}
                 </div>
             </div>
