@@ -1,9 +1,9 @@
-const base_url = 'https://pokeapi.co/api/v2/pokemon';
+const base_url = 'https://pokeapi.co/api/v2';
 
 export const fetchPokemon = async (limit = 20) => {
 
     try {
-        const listResponse = await fetch(`${base_url}?limit=${limit}`);
+        const listResponse = await fetch(`${base_url}/pokemon?limit=${limit}`);
 
         if(!listResponse.ok) {
             throw new Error(`API request failed: ${listResponse.status}`);
@@ -23,4 +23,23 @@ export const fetchPokemon = async (limit = 20) => {
         console.error('Error fetching the Pokemon ', error);
     }
 
+};
+
+export const fetchLocations = async (limit = 20) => {
+    try {
+        const listResponse = await fetch(`${base_url}/location?limit=${limit}`);
+
+        const listData = await listResponse.json();
+
+        const gameLocations = await Promise.all(
+            listData.results.map(locations =>
+                fetch(locations.url).then(res => res.json())
+            )
+        );
+
+        return gameLocations;
+
+    } catch (error) {
+        console.error('Error fetching the game locations ', error); 
+    }
 };
