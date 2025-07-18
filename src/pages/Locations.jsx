@@ -1,5 +1,6 @@
 import { fetchLocations } from "../api/pokemonApi";
 import React, {useState, useEffect} from 'react'; 
+import LocationsCard from "../components/LocationsCard";
 
 function Locations() {
     const [location, setLocation] = useState([]);
@@ -28,7 +29,7 @@ function Locations() {
             <div className='location-container'>
                 <div className='location-grid'>
                     {location.map((loc) => (
-                        <p>{loc.name}</p>
+                        <LocationsCard location={loc} key={loc.id} />
                     ))}
                 </div>
             </div>
