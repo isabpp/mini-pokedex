@@ -22,3 +22,34 @@
     display: flex;
     justify-content: center;
 }
+
+.pokemon-types {
+    margin: 10px;
+}
+
+.type-badge {
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    color: white;
+}
+
+/*specific type badge colors for each pokemon type*/
+.type-normal { background-color: rgb(189, 172, 151); }
+.type-bug { background-color: #0e6123; }
+.type-rock { background-color: #998f64; }
+.type-ghost { background-color: #464285; }
+.type-dragon { background-color: #7038F8; }
+.type-dark { background-color: #705848; }
+.type-steel { background-color: #979faa; }
+.type-fairy { background-color: #e676b7; }
+.type-ice { background-color: #9fecec; }
+.type-fighting { background-color: #C03028; }
+.type-poison { background-color: #771c77; }
+.type-ground { background-color: #966c2e; }
+.type-flying { background-color: #A890F0; }
+.type-psychic { background-color: #c73c71; }
+.type-fire { background-color: #f0611f; }
+.type-water { background-color: #499dd4; }
+.type-electric { background-color: #ebf830; }
+.type-grass { background-color: #78C850; }
