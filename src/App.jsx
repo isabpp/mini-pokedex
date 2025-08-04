@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Pokemon from './pages/Pokemon'
 import Locations from './pages/Locations'
+import NavBar from './components/Navbar'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <>
+      <NavBar />
       <Pokemon />
       <Locations />
     </>
