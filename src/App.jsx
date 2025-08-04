@@ -9,13 +9,13 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className="app-container">
       <NavBar />
       <Routes>
         <Route path='/' element={<Pokemon />}/>
         <Route path='/locations' element={<Locations />}/>
       </Routes>
-    </>
+    </div>
   )
 }
 

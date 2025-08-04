@@ -1,6 +1,7 @@
 import { fetchLocations } from "../api/pokemonApi";
 import React, {useState, useEffect} from 'react'; 
 import LocationsCard from "../components/LocationsCard";
+import '../locations.css';
 
 function Locations() {
     const [location, setLocation] = useState([]);

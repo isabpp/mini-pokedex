@@ -37,6 +37,7 @@ export const fetchLocations = async (limit = 20) => {
             )
         );
 
+        console.log(gameLocations);
         return gameLocations;
 
     } catch (error) {
