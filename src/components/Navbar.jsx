@@ -1,3 +1,5 @@
+import '../App.css';
+
 function NavBar() {
     return (
         <nav>
