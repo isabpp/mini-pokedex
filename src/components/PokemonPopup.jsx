@@ -1,3 +1,5 @@
+import '../popup.css';
+
 function PokemonPopup({pokemon, onClose}) {
     return(
         <div className="popup-overlay">

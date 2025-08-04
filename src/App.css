@@ -19,7 +19,7 @@ nav {
   justify-content: space-between;
   flex-direction: row;
   background-color: aqua;
-  padding: 1rem 1rem 0.5rem 3rem;
+  padding: 0.1rem 1rem 0.1rem 3rem;
   align-items: center;
 }
 
@@ -27,6 +27,7 @@ nav {
   display: flex;
   flex-direction: row;
   margin-right: 3rem;
+  align-items: center;
 }
 
 nav ul li {
