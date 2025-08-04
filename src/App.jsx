@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {Routes, Route} from 'react-router-dom'
 import Pokemon from './pages/Pokemon'
 import Locations from './pages/Locations'
 import NavBar from './components/Navbar'
@@ -12,8 +11,10 @@ function App() {
   return (
     <>
       <NavBar />
-      <Pokemon />
-      <Locations />
+      <Routes>
+        <Route path='/' element={<Pokemon />}/>
+        <Route path='/locations' element={<Locations />}/>
+      </Routes>
     </>
   )
 }
