@@ -8,6 +8,12 @@
     width: 250px;
     margin: 10px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pokemon-card:hover {
+    filter: brightness(90%);
 }
 
 .pokemon-name {
