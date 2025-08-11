@@ -9,7 +9,7 @@ function PokemonCard({pokemon}) {
         <>
             <div className="pokemon-card" onClick={() => setPopup(true)}>
                 <img src={pokemon.sprites.front_default} alt={pokemon.name} className='pokemon-image'/>
-                <h3 className="pokemon-name"> {pokemon.name}</h3>
+                <h3 className="pokemon-name text-xl font-medium"> {pokemon.name}</h3>
                 <div className="pokemon-types">
                     <span>type: </span>
                     {pokemon.types.map((typeInfo, index) => (
