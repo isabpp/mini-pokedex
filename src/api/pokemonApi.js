@@ -27,7 +27,7 @@ export const fetchPokemon = async (limit = 20) => {
 
 export const fetchLocations = async (limit = 20) => {
     try {
-        const listResponse = await fetch(`${base_url}/location?limit=${limit}`);
+        const listResponse = await fetch(`${base_url}/location-area?limit=${limit}`);
 
         const listData = await listResponse.json();
 
