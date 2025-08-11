@@ -8,20 +8,20 @@ function PokemonPopup({pokemon, onClose}) {
                     <h2 className="text-xl font-medium">{pokemon.name}</h2>
                     <button className="close-btn" onClick={onClose}>close</button>
                 </div>
-                <div className="pokemon-container">
-                    <img src={pokemon.sprites.front_default} alt={pokemon.name} className="pokemon-image"/>
-                    <div className="information-container">
-                        <div className="abilities">
-                            <h3 className="text-xl font-medium">Abilities</h3>
-                            <div className="ability-container">
+                <div className="pokemon-container flex flex-row">
+                    <img src={pokemon.sprites.front_default} alt={pokemon.name} className="w-2/5"/>
+                    <div className="information-container flex flex-col w-3/5 m-2">
+                        <div className="abilities m-2">
+                            <h3 className="text-xl font-medium bg-[#dbdaa0] rounded-md">Abilities</h3>
+                            <div className="ability-container mt-2">
                                 {pokemon.abilities.map((ability, index) => (
                                     <span key={index} className="ability-badge">{ability.ability.name}</span>
                                 ))}
                             </div>
                         </div>
-                        <div className="stats">
-                            <h3 className="text-xl font-medium">Stats</h3>
-                            <div className="stat-container">
+                        <div className="stats m-2">
+                            <h3 className="text-xl font-medium bg-[#dbdaa0] rounded-md">Stats</h3>
+                            <div className="stat-container flex flex-wrap mt-2">
                                 {pokemon.stats.map((statInfo, index) => (
                                     <span key={index} className="stat-badge">
                                         {statInfo.stat.name}: {statInfo.base_stat}
