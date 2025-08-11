@@ -1,11 +1,6 @@
-.pokemon-image {
-    width: 200px;
-    height: 200px;
-}
-
 .pokemon-card {
-    background-color: rgb(255, 254, 196);
-    width: 250px;
+    /*background-color: rgb(255, 254, 196);*/
+    /*width: 250px;*/
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;

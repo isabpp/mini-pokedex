@@ -7,8 +7,8 @@ function PokemonCard({pokemon}) {
 
     return (
         <>
-            <div className="pokemon-card" onClick={() => setPopup(true)}>
-                <img src={pokemon.sprites.front_default} alt={pokemon.name} className='pokemon-image'/>
+            <div className="pokemon-card flex flex-col items-center justify-center bg-[#fffec4] w-3xs" onClick={() => setPopup(true)}>
+                <img src={pokemon.sprites.front_default} alt={pokemon.name} className='pokemon-image size-[200px]'/>
                 <h3 className="pokemon-name text-xl font-medium"> {pokemon.name}</h3>
                 <div className="pokemon-types">
                     <span>type: </span>
