@@ -13,7 +13,7 @@ function PokemonPopup({pokemon, onClose}) {
                     <div className="information-container">
                         <div className="abilities">
                             <h3>Abilities</h3>
-                            <div className="ability-list">
+                            <div className="ability-container">
                                 {pokemon.abilities.map((ability, index) => (
                                     <span key={index} className="ability-badge">{ability.ability.name}</span>
                                 ))}
@@ -21,6 +21,13 @@ function PokemonPopup({pokemon, onClose}) {
                         </div>
                         <div className="stats">
                             <h3>Stats</h3>
+                            <div className="stat-container">
+                                {pokemon.stats.map((statInfo, index) => (
+                                    <span key={index} className="stat-badge">
+                                        {statInfo.stat.name}: {statInfo.base_stat}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
