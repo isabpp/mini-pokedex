@@ -6,18 +6,18 @@
     padding: 0px;
 }
 
-.locations-grid {
+/*.locations-grid {
     width: 80%;
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-}
+}*/
 
-.locations-card {
+/*.locations-card {
     background-color: rgb(171, 212, 143);
     width: 250px;
     margin: 10px;
     border-radius: 10px;
-}
+}*/

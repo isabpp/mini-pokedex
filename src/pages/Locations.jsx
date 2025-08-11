@@ -28,7 +28,7 @@ function Locations() {
     return(
         <>
             <div className='location-container'>
-                <div className='location-grid'>
+                <div className='location-grid w-3/4 flex flex-row flex-wrap'>
                     {location.map((loc) => (
                         <LocationsCard location={loc} key={loc.id} />
                     ))}
