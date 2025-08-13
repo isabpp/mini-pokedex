@@ -40,9 +40,19 @@
 }
 
 .ability-badge, .stat-badge {
-    padding: 5px 10px 5px 10px;
+    padding: 3px 10px 3px 10px;
+    margin: 5px;
+    border-radius: 7px;
 }
 
 h2 {
     text-transform: capitalize;
 }
+
+/*specific stat badge colors for each pokemon type*/
+.stat-hp { background-color: rgb(169, 233, 132); }
+.stat-attack { background-color: rgb(255, 126, 126); }
+.stat-defense { background-color: rgb(171, 224, 255); }
+.stat-special-attack { background-color: rgb(255, 126, 249); }
+.stat-special-defense { background-color: rgb(155, 153, 248); }
+.stat-speed { background-color: rgb(255, 253, 146); }

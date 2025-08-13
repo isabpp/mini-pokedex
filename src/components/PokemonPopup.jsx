@@ -10,20 +10,20 @@ function PokemonPopup({pokemon, onClose}) {
                 </div>
                 <div className="pokemon-container flex flex-row">
                     <img src={pokemon.sprites.front_default} alt={pokemon.name} className="w-2/5"/>
-                    <div className="information-container flex flex-col w-3/5 m-2">
+                    <div className="information-container flex flex-col w-3/5 m-2 bg-yellow-50 rounded-md">
                         <div className="abilities m-2">
-                            <h3 className="text-xl font-medium bg-[#dbdaa0] rounded-md">Abilities</h3>
-                            <div className="ability-container mt-2">
+                            <h3 className="text-xl font-medium bg-gray-500/90 rounded-md p-1 text-white">Abilities</h3>
+                            <div className="ability-container mt-4">
                                 {pokemon.abilities.map((ability, index) => (
-                                    <span key={index} className="ability-badge">{ability.ability.name}</span>
+                                    <span key={index} className="ability-badge font-medium bg-gray-200/90">{ability.ability.name}</span>
                                 ))}
                             </div>
                         </div>
                         <div className="stats m-2">
-                            <h3 className="text-xl font-medium bg-[#dbdaa0] rounded-md">Stats</h3>
+                            <h3 className="text-xl font-medium bg-gray-500/90 rounded-md p-1 text-white">Stats</h3>
                             <div className="stat-container flex flex-wrap mt-2">
                                 {pokemon.stats.map((statInfo, index) => (
-                                    <span key={index} className="stat-badge">
+                                    <span key={index} className={`stat-badge font-medium stat-${statInfo.stat.name}`}>
                                         {statInfo.stat.name}: {statInfo.base_stat}
                                     </span>
                                 ))}
