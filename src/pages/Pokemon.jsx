@@ -22,8 +22,8 @@ function Pokemon() {
         loadPokemon();
     }, []);
 
-    if (loading) return <div>Loading the Pokemon...</div>;
-    if (error) return <div>Error: {error}</div>;
+    if (loading) return <div className='text-white'>Loading the Pokemon...</div>;
+    if (error) return <div className='text-white'>Error: {error}</div>;
 
     return(
         <>
