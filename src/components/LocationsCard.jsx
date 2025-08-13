@@ -1,4 +1,6 @@
 import '../locations.css';
+import LocationCollapsible from './LocationCollapsible';
+import { useState } from 'react';
 
 function LocationsCard({location}) {
     return (
