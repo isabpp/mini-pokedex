@@ -1,12 +1,22 @@
-# React + Vite
+# Mini Pokedex (Still in progress :hammer:)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech Stack
+* Vite + React
+* JavaScript
+* TailwindCSS + vanilla CSS
 
-Currently, two official plugins are available:
+## Features So Far
+* Data fetched from PokeAPI
+* Navigation bar
+* Clickable/ hoverable Pokemon cards
+* Popup with more information about a Pokemon
+* Location cards have a collapsable section with more information
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## The Next Steps
+* Gradually adding more features like filtering/ search options etc.
+* Polishing the UI
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Screnshots of the work so far:
+![pokedex_p1](https://github.com/user-attachments/assets/d81f06b3-2e2e-44aa-b3fb-df73d876ce08)
+![pokedex_p2_v2](https://github.com/user-attachments/assets/4252f74e-5a64-4f1e-84d2-9690a18ea0bc)
+![pokedex_l](https://github.com/user-attachments/assets/3e9409f4-521c-4f7f-a277-51a10ba5837f)
