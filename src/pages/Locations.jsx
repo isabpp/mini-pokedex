@@ -28,21 +28,12 @@ function Locations() {
     return(
         <>
             <div className='location-container'>
-                <table className='table-fixed'>
-                    <thead className="bg-[#70ba73] p-2 w-full border border-green-800">
-                        <tr>
-                            <th className="pr-2">Area name</th>
-                            <th>City</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {location.map((loc) => (
-                            <LocationsCard location={loc} key={loc.id} />
-                        ))}
-                    </tbody>
-                </table>
+                <div className='location-grid w-5/6 flex flex-col justify-center items-center'>
+                    {location.map((loc) => (
+                        <LocationsCard location={loc} key={loc.id} />
+                    ))}
+                </div>
             </div>
-
         </>
     )
 }
