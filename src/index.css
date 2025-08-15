@@ -1,4 +1,13 @@
+@font-face {
+  font-family: Jersey;
+  src: url("assets/Jersey10-Regular.ttf");
+}
+
 @import "tailwindcss";
+
+@theme {
+  --font-jersey: Jersey, "sans-serif";
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
