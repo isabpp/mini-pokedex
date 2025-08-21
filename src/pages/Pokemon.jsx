@@ -29,12 +29,12 @@ function Pokemon() {
     return(
         <>
             <div className='pokemon-container flex flex-col justify-center items-center'>
-                <div className='search-container bg-cyan-100 mt-3 p-2 flex flex-row rounded-lg items-center'>
-                    <p className='mx-3'>Searching for a specific pokemon?</p>
+                <div className='search-container bg-cyan-100 mt-3 p-2 flex flex-row rounded-lg items-center justify-center w-3/5'>
+                    <p className='mx-3'>Searching for a specific pokémon?</p>
                     <FaSearch className='ml-3'/>
                     <input type='text' className='bg-white mx-3 rounded-md'></input>
                 </div>
-                <div className='pokemon-grid'>
+                <div className='pokemon-grid flex flex-wrap flex-row items-center justify-center p-2 w-2/3'>
                     {pokemon.map((p) => (
                         <PokemonCard pokemon={p} key={p.id} />
                     ))}
