@@ -1,6 +1,7 @@
 import { fetchPokemon } from '../api/pokemonApi';
 import React, {useState, useEffect} from 'react'; 
 import PokemonCard from '../components/PokemonCard';
+import { FaSearch } from "react-icons/fa";
 import '../pokemon.css';
 
 function Pokemon() {
@@ -27,7 +28,12 @@ function Pokemon() {
 
     return(
         <>
-            <div className='pokemon-container'>
+            <div className='pokemon-container flex flex-col justify-center items-center'>
+                <div className='search-container bg-cyan-100 mt-3 p-2 flex flex-row rounded-lg items-center'>
+                    <p className='mx-3'>Searching for a specific pokemon?</p>
+                    <FaSearch className='ml-3'/>
+                    <input type='text' className='bg-white mx-3 rounded-md'></input>
+                </div>
                 <div className='pokemon-grid'>
                     {pokemon.map((p) => (
                         <PokemonCard pokemon={p} key={p.id} />

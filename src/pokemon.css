@@ -25,10 +25,10 @@
     justify-content: center;
 }
 
-.pokemon-container {
+/*.pokemon-container {
     display: flex;
     justify-content: center;
-}
+}*/
 
 .pokemon-types {
     margin: 10px;
